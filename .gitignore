@@ -1,0 +1,7 @@
+
+*.exe
+
+.hemttout/
+
+*.vscode/
+releases/

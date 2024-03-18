@@ -1,0 +1,36 @@
+name = "M119"
+author = "TBD Team"
+prefix = "tbd_m119"
+mainprefix = "x"
+
+[files]
+include=["mod.cpp"]
+exclude=[".vscode/**/*"]
+
+[version]
+major=0
+minor=1
+patch=
+
+git_hash=0
+
+[hemtt.release]
+sign   =true
+archive=false
+
+[hemtt.launch]
+workshop = [
+    "450814997", # CBA_A3
+    "463939057", # ACE
+    "2369477168", # Advanced Developer Tools
+    "3058335345", # TBD Mortars
+]
+
+mission = "test.Stratis"
+
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+]
