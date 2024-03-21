@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project name="tbd_mortar">
-    <Package name="Translation">
-        <Key ID="STR_TBD_M119_NAME">
-            <English>M119</English>
-            <Czech>M119</Czech>
-        </Key>
-    </Package>
-</Project>
