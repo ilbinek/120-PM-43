@@ -79,15 +79,19 @@ class CfgVehicles {
                 minTurn = -180;
                 maxTurn = 180;
                 initTurn = 0;
-                cameraDir = "usti hlavne";
+                cameraDir = "look";
                 discreteDistance[] = {};
                 //discreteDistanceCameraPoint[] = {"eye"};
                 gunnerForceOptics = 0;
+                memoryPointCamera = "gunnerview";
                 memoryPointGunnerOptics = "gunnerview";
+                discreteDistanceCameraPoint[] = {"gunnerview"};
                 gunnerOpticsModel = QPATHTOF(TBD_120mm_PM_43\scope.p3d);
                 gunnerUsesPilotView = 1;
                 disableSoundAttenuation = 1;
                 class ViewOptics : ViewOptics {
+                    camPos = "gunnerview";
+                    camDir = "look";
                     initAngleX = 0;
                     minAngleX = -30;
                     maxAngleX = 30;
@@ -100,13 +104,13 @@ class CfgVehicles {
                     visionMode[] = {"Normal"};
                 };
                 minelev = 0;
-                maxelev = 44;
+                maxelev = 40;
                 magazines[] = {};
                 ejectDeadGunner = 1;
                 usepip = 2;
                 discreteDistanceInitIndex = 0;
                 primaryGunner = 1;
-                maxHorizontalRotSpeed = 1.2;
+                maxHorizontalRotSpeed = 0.3;
                 memoryPointsGetInGunner = "pos_gunner";
                 memoryPointsGetInGunnerDir = "pos_gunner_dir";
                 proxyType = "CPGunner";
