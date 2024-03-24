@@ -1,4 +1,4 @@
-name = ""
+name = "Tvoje mama"
 author = "TBD Team"
 prefix = "tbd_120mm"
 mainprefix = "x"
@@ -10,7 +10,7 @@ exclude=[".vscode/**/*"]
 [version]
 major=0
 minor=1
-patch=
+patch=1
 
 git_hash=0
 
