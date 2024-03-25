@@ -45,7 +45,7 @@ class CfgVehicles {
 
         class AnimationSources {
             class RoundHideSource {
-                weapon = QUOTE(TBD_2B25_WEAPON);
+                weapon = QUOTE(TBD_120mm_PM_43_WEAPON);
                 selection = "round_selection";
                 source = "ammo";
                 type = "hide";
@@ -54,15 +54,11 @@ class CfgVehicles {
             };
 
             class Mamasource {
-                weapon = QUOTE(TBD_2B25_WEAPON);
+                weapon = QUOTE(TBD_120mm_PM_43_WEAPON);
                 selection = "round_selection";
                 source = "reloadMagazine";
             };
 
-             class LegsSource {
-                selection = "legs";
-                source = "mainGun";
-            };
         };
 
         class Turrets : Turrets {
@@ -70,7 +66,7 @@ class CfgVehicles {
                 gunnerAction = "Mortar_Gunner";
                 gunnergetInAction = "GetInLow";
                 gunnergetOutAction = "GetOutLow";
-                weapons[] = {QUOTE(TBD_2B25_WEAPON)};
+                weapons[] = {QUOTE(TBD_120mm_PM_43_WEAPON)};
                 elevationMode = 1;
                 initCamElev = 0;
                 minCamElev = -35;
@@ -104,7 +100,7 @@ class CfgVehicles {
                     visionMode[] = {"Normal"};
                 };
                 minelev = 0;
-                maxelev = 40;
+                maxelev = 35;
                 magazines[] = {};
                 ejectDeadGunner = 1;
                 usepip = 2;

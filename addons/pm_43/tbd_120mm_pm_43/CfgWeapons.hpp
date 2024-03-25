@@ -14,21 +14,21 @@ class CfgWeapons {
 
 	class mortar_82mm: CannonCore {};
 
-	class TBD_2B25_WEAPON: mortar_82mm {
-		displayName = "2B25 Mortar";
-		magazines[] = {QUOTE(TBD_2B25_HE)};
+	class TBD_120mm_PM_43_WEAPON: mortar_82mm {
+		displayName = "120-PM-43 mortar";
+		magazines[] = {QUOTE(TBD_MORTAR_120mm_SHELL_HE)};
 		modes[] = {"Single"};
 		reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		magazineReloadTime = 0.5;
 		class Single: Mode_SemiAuto {
-			displayName="Gall Mortar";
+			displayName="120-PM-43 mortar";
 			sounds[]=
 			{
 				"StandardSound"
 			};
 			class StandardSound {
-				soundSetShot[] = {QUOTE(TBD_2B25_SHOT_SOUNDSET)};
+				soundSetShot[] = {QUOTE(TBD_120mm_PM_43_SHOT_SOUNDSET)};
 			};
 			reloadSound[]=
 			{

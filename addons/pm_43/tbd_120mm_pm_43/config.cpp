@@ -5,7 +5,7 @@ class CfgPatches {
         addonRootClass = "A3_Armor_F_Beta";
         requiredAddons[] = {"cba_main", "ace_interact_menu"};
         requiredVersion = 0.5;
-        weapons[] = {QUOTE(TBD_2B25_WEAPON)};
+        weapons[] = {QUOTE(TBD_120mm_PM_43_WEAPON)};
         units[] = {QUOTE(TBD_120MM_PM_43)};
     };
 };

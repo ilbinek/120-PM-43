@@ -1,8 +1,8 @@
 class CfgSoundShaders {
-	class TBD_2B25_SHOT_SOUNDSHADER {
-		samples[] = {{QPATHTOF(TBD_2B25_GALL\sounds\2B25shot.ogg), 1}};
-		volume = 2;
-		range = 100;
+	class TBD_120mm_PM_43_SHOT_SOUNDSHADER {
+		samples[] = {{QPATHTOF(TBD_120mm_PM_43\sounds\120.ogg), 1}};
+		volume = 4;
+		range = 1000;
 		rangeCurve = "LinearCurve";
 	};
 };
