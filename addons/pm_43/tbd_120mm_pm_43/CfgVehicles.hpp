@@ -28,7 +28,7 @@ class CfgVehicles {
         displayName = "$STR_TBD_120mm_PM_43";
         model = QPATHTOF(TBD_120mm_PM_43\TBD_120mm_PM_43);
         editorPreview = QPATHTOF(TBD_120mm_PM_43\data\preview.paa);
-        picture = QPATHTOF(TBD_120mm_PM_43\data\TBD_120mm_PM_43_icon.paa);
+        picture = QPATHTOF(TBD_120mm_PM_43\data\120pm43icon.paa);
         side = 0;
         faction = "OPF_F";
         crew = "O_Soldier_F";
