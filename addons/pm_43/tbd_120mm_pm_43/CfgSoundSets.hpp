@@ -1,7 +1,7 @@
 class CfgSoundSets {
 	class TBD_120mm_PM_43_SHOT_SOUNDSET {
 		soundShaders[] = {QUOTE(TBD_120mm_PM_43_SHOT_SOUNDSHADER)};
-		volumeFactor = 1.6;
+		volumeFactor = 2.1;
 		volumeCurve = "InverseSquare2Curve";
 		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
 		distanceFilter = "weaponShotDistanceFreqAttenuationFilter";

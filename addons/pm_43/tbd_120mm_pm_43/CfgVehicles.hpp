@@ -25,7 +25,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = "TBD Team";
-        displayName = CSTRING(STR_TBD_120mm_PM_43_NAME);
+        displayName = CSTRING(NAME);
         model = QPATHTOF(TBD_120mm_PM_43\TBD_120mm_PM_43);
         editorPreview = QPATHTOF(TBD_120mm_PM_43\data\preview.paa);
         picture = QPATHTOF(TBD_120mm_PM_43\data\120pm43icon.paa);
