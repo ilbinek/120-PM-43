@@ -24,15 +24,15 @@
 #define MORTPATH(var1,var2) x\tbd_mortars\addons\var1\var2
 #define QMORTPATH(var1,var2) QUOTE(MORTPATH(var1,var2))
 
-#define TBD_2B25_GALL tbd_2b25_gall
 #define TBD_120mm_PM_43_WEAPON tbd_120mm_pm_43_weapon
-#define TBD_2B25_BOX_HE tbd_2b25_box_he
-#define TBD_120mm_PM_43_HE tbd_120mm_PM_43_shell_he
-#define TBD_2B25_82mm_SHELL_AMMO_HE tbd_2B25_82mm_shell_ammo_he
-
-#define TBD_2B25_CARRY tbd_2b25_carry
-#define TBD_2B25_TRIPOD tbd_2b25_tripod
-#define TBD_2B25_BASEPLATE tbd_2b25_baseplate
 
 #define TBD_120mm_PM_43_SHOT_SOUNDSET tbd_120mm_pm_43_shot_soundset
 #define TBD_120mm_PM_43_SHOT_SOUNDSHADER tbd_120mm_pm_43_shot_soundshader
+
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_1 tbd_mortar_120mm_shell_he_charge_1
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_2 tbd_mortar_120mm_shell_he_charge_2
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_3 tbd_mortar_120mm_shell_he_charge_3
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_4 tbd_mortar_120mm_shell_he_charge_4
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_5 tbd_mortar_120mm_shell_he_charge_5
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_6 tbd_mortar_120mm_shell_he_charge_6
+#define TBD_MORTAR_120mm_SHELL_HE_CHARGE_7 tbd_mortar_120mm_shell_he_charge_7

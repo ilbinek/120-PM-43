@@ -34,3 +34,19 @@ parameters = [
     "-showScriptErrors",    # You can add additional parameters here
     "-debug",
 ]
+
+[hemtt.launch.local]
+workshop = [
+    "450814997", # CBA_A3
+    "463939057", # ACE
+    "2369477168", # Advanced Developer Tools
+]
+
+mission = "test.Stratis"
+
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+]

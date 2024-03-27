@@ -16,7 +16,7 @@ class CfgWeapons {
 
 	class TBD_120mm_PM_43_WEAPON: mortar_82mm {
 		displayName = "120-PM-43 mortar";
-		magazines[] = {QUOTE(TBD_MORTAR_120mm_SHELL_HE)};
+		magazines[] = {QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_1), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_2), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_3), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_4), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_5), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_6), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_7)};
 		modes[] = {"Single"};
 		reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
@@ -51,7 +51,7 @@ class CfgWeapons {
 		};
 	};
 
-	class ace_csw_staticMortarCarry: Launcher_Base_F {};
+	/*class ace_csw_staticMortarCarry: Launcher_Base_F {};
 	class TBD_2B25_CARRY: ace_csw_staticMortarCarry {
 		class ACE_CSW {
 			type = "weapon";
@@ -89,5 +89,5 @@ class CfgWeapons {
         };
 		displayName = QUOTE(2B25 Mortar Baseplate);
 		author = QUOTE(TBD Team);
-	};
+	};*/
 };
