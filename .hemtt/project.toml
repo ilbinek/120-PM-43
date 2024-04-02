@@ -10,7 +10,7 @@ exclude=[".vscode/**/*"]
 [version]
 major=0
 minor=1
-patch=1
+patch=2
 
 git_hash=0
 
@@ -20,10 +20,10 @@ archive=false
 
 [hemtt.launch]
 workshop = [
-    #"450814997", # CBA_A3
-    #"463939057", # ACE
+    "450814997", # CBA_A3
+    "463939057", # ACE
     "2369477168", # Advanced Developer Tools
-    #"3058335345", # TBD Mortars
+    "3058335345", # TBD Mortars
 ]
 
 mission = "test.Stratis"
