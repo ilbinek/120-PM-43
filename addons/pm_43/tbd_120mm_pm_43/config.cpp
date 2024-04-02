@@ -15,3 +15,4 @@ class Mode_SemiAuto;
 #include "CfgSoundSets.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgMoves.hpp"
