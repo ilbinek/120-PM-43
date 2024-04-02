@@ -16,3 +16,4 @@ class Mode_SemiAuto;
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgMoves.hpp"

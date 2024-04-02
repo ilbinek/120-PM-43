@@ -30,7 +30,7 @@ class CfgVehicles {
         crew = "O_Soldier_F";
 
         transportSoldier = 0;
-        cargoAction[] = {"Mortar_Gunner"};
+        cargoAction[] = {"120testpose"};
         getInAction = "GetInMortar";
         getOutAction = "GetOutLow";
         unitInfoType = "RscUnitInfoMortar";
@@ -41,7 +41,7 @@ class CfgVehicles {
 
         class Turrets : Turrets {
             class MainTurret : MainTurret {
-                gunnerAction = "Mortar_Gunner";
+                gunnerAction = "120testpose";
                 gunnergetInAction = "GetInLow";
                 gunnergetOutAction = "GetOutLow";
                 weapons[] = {QUOTE(TBD_120mm_PM_43_WEAPON)};
