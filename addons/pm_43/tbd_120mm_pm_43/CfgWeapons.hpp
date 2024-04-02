@@ -7,22 +7,17 @@ class CfgWeapons {
 		class far;
 	};
 
-	class Launcher;
-    class Launcher_Base_F: Launcher {
-        class WeaponSlotsInfo;
-    };
-
 	class mortar_82mm: CannonCore {};
 
 	class TBD_120mm_PM_43_WEAPON: mortar_82mm {
 		displayName = "120-PM-43 mortar";
-		magazines[] = {QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_1), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_2), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_3), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_4), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_5), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_6), QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_7)};
-		modes[] = {"Single"};
+		magazines[] = {QUOTE(TBD_MORTAR_120mm_SHELL_HE)};
+		modes[] = {"Single1", "Single2", "Single3", "Single4", "Single5", "Single6", "Single7"};
 		reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		magazineReloadTime = 0.5;
-		class Single: Mode_SemiAuto {
-			displayName="120-PM-43 mortar";
+		class Single1: Mode_SemiAuto {
+			displayName="120-PM-43 mortar ch. 0";
 			sounds[]=
 			{
 				"StandardSound"
@@ -47,47 +42,37 @@ class CfgWeapons {
 			midRangeProbab=0.0099999998;
 			maxRange=2;
 			maxRangeProbab=0.0099999998;
-			
+			artilleryCharge = 0.14;
+		};
+		
+		class Single2: Single1 {
+			displayName="120-PM-43 mortar ch. 1";
+			artilleryCharge = 0.28;
+		};
+
+		class Single3: Single1 {
+			displayName="120-PM-43 mortar ch. 2";
+			artilleryCharge = 0.42;
+		};
+
+		class Single4: Single1 {
+			displayName="120-PM-43 mortar ch. 3";
+			artilleryCharge = 0.56;
+		};
+
+		class Single5: Single1 {
+			displayName="120-PM-43 mortar ch. 4";
+			artilleryCharge = 0.70;
+		};
+
+		class Single6: Single1 {
+			displayName="120-PM-43 mortar ch. 5";
+			artilleryCharge = 0.84;
+		};
+
+		class Single7: Single1 {
+			displayName="120-PM-43 mortar ch. 6";
+			artilleryCharge = 1;
 		};
 	};
-
-	/*class ace_csw_staticMortarCarry: Launcher_Base_F {};
-	class TBD_2B25_CARRY: ace_csw_staticMortarCarry {
-		class ACE_CSW {
-			type = "weapon";
-			deployTime = 10;
-			pickupTime = 10;
-			class assembleTo {
-				TBD_2B25_BASEPLATE = QUOTE(TBD_2B25_GALL);
-			};
-		};
-
-		class WeaponSlotsInfo: WeaponSlotsInfo {
-			class MuzzleSlot {
-				iconScale = 0.1;	
-			};
-
-			mass = 444;
-		};
-
-		displayName = QUOTE(2B25 Mortar);
-        author = QUOTE(TBD Team);
-	};
-
-	class ace_csw_carryMortarBaseplate: Launcher_Base_F {};
-
-	class TBD_2B25_TRIPOD: ace_csw_carryMortarBaseplate {
-		class ACE_CSW {
-            type = "mount";
-            deployTime = 2;
-            pickupTime = 2;
-            deploy = QUOTE(TBD_2B25_BASEPLATE);
-        };
-
-		class WeaponSlotsInfo: WeaponSlotsInfo {
-            mass = 154; // M3A1 baseblate weight
-        };
-		displayName = QUOTE(2B25 Mortar Baseplate);
-		author = QUOTE(TBD Team);
-	};*/
 };

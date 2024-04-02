@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {QUOTE(TBD_120mm_PM_43)};
         weapons[] = {};
         requiredVersion = 2.04;
-        requiredAddons[] = {"cba_main", "ace_interact_menu", "tbd_mortars_main"};
+        requiredAddons[] = {};
     };
 };
 

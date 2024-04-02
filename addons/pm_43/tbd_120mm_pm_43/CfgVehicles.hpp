@@ -7,7 +7,6 @@ class CfgVehicles {
         class Turrets;
 		class MainTurret;
     	class EventHandlers;
-		class ACE_Actions;
     };
     class StaticMortar : StaticWeapon {
         class Turrets {
@@ -18,10 +17,7 @@ class CfgVehicles {
     };
 
     class TBD_120mm_PM_43 : StaticMortar {
-        artilleryScanner = 0; // turn off artillery computer
-        ace_artillerytables_showRangetable = 1; // "fix" rangetables not showing up
-        ace_artillerytables_showGunLaying = 1;  // "fix" rangetables not showing up
-
+        artilleryScanner = 1;
         scope = 2;
         scopeCurator = 2;
         author = "TBD Team";
@@ -83,7 +79,7 @@ class CfgVehicles {
                 };
                 minelev = 0;
                 maxelev = 35;
-                magazines[] = {};
+                magazines[] = {QUOTE(TBD_MORTAR_120mm_SHELL_HE), QUOTE(TBD_MORTAR_120mm_SHELL_HE), QUOTE(TBD_MORTAR_120mm_SHELL_HE), QUOTE(TBD_MORTAR_120mm_SHELL_HE)};
                 ejectDeadGunner = 1;
                 usepip = 2;
                 discreteDistanceInitIndex = 0;
@@ -101,145 +97,5 @@ class CfgVehicles {
         mfMax = 0;
         mFact = 1;
         tBody = 100;
-
-        ace_cargo_size = 2;
-        ace_cargo_canLoad = 1;
-
-        ace_dragging_canDrag = 1;
-        ace_dragging_dragPosition[] = {0, 1.2, 0};
-
-        class ACE_Actions {
-            class TBD_LoadShell {
-                selection = "usti hlavne";
-                distance = 2.5;
-                condition = "alive _target";
-                showDisabled = 1;
-                priority = 5;
-                displayName = CSTRING(LOAD);
-                icon = QMORTPATH(main,data\load.paa);
-
-                class LoadHECh1 {
-                    displayName = CSTRING(HE_CHARGE_1);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_1)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_1)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-
-                class LoadHECh2 {
-                    displayName = CSTRING(HE_CHARGE_2);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_2)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_2)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-
-                class LoadHECh3 {
-                    displayName = CSTRING(HE_CHARGE_3);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_3)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_3)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-
-                class LoadHECh4 {
-                    displayName = CSTRING(HE_CHARGE_4);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_4)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_4)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-
-                class LoadHECh5 {
-                    displayName = CSTRING(HE_CHARGE_5);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_5)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_5)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-
-                class LoadHECh6 {
-                    displayName = CSTRING(HE_CHARGE_6);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_6)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_6)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-
-                class LoadHECh7 {
-                    displayName = CSTRING(HE_CHARGE_7);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_7)))] call MORTFUNC(checkCanLoadShell));
-                    statement = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_7)))] call MORTFUNC(loadShell));
-                    showDisabled = 0;
-                };
-            };
-
-            class TBD_UnLoadShell {
-                selection = "usti hlavne";
-                distance = 2.5;
-                condition = "alive _target";
-                showDisabled = 1;
-                priority = 5;
-                displayName = CSTRING(UNLOAD);
-                icon = QMORTPATH(main,data\unload.paa);
-
-                class UnloadHECh1 {
-                    displayName = CSTRING(HE_CHARGE_1);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_1)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_1)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-
-                class UnloadHECh2 {
-                    displayName = CSTRING(HE_CHARGE_2);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_2)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_2)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-
-                class UnloadHECh3 {
-                    displayName = CSTRING(HE_CHARGE_3);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_3)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_3)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-
-                class UnloadHECh4 {
-                    displayName = CSTRING(HE_CHARGE_4);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_4)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_4)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-
-                class UnloadHECh5 {
-                    displayName = CSTRING(HE_CHARGE_5);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_5)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_5)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-
-                class UnloadHECh6 {
-                    displayName = CSTRING(HE_CHARGE_6);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_6)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_6)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-
-                class UnloadHECh7 {
-                    displayName = CSTRING(HE_CHARGE_7);
-                    icon = QMORTPATH(120mm,tbd_mortar_120mm_shell_he\data\icon_120mm_he.paa);
-                    condition = QUOTE([ARR_3(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_7)))] call MORTFUNC(checkCanUnloadShell));
-                    statement = QUOTE([ARR_4(_target,0,QUOTE(QUOTE(TBD_MORTAR_120mm_SHELL_HE_CHARGE_7)),_player)] call MORTFUNC(unloadShell));
-                    showDisabled = 0;
-                };
-            };
-        };
     };
 };
