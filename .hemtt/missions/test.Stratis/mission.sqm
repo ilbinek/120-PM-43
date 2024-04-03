@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1804.5952,12.724473,5993.856};
-		dir[]={-0.80396152,-0.3423155,-0.4862574};
-		up[]={-0.29292685,0.93952519,-0.17717007};
-		aside[]={-0.51753217,-3.0826777e-07,0.85566962};
+		pos[]={1796.7471,7.1464896,5988.5659};
+		dir[]={-0.77347547,-0.60190785,-0.19852729};
+		up[]={-0.58304,0.79840916,-0.14964759};
+		aside[]={-0.24861795,9.95351e-08,0.96861762};
 	};
 };
 binarizationWanted=0;
@@ -27,6 +27,7 @@ sourceName="test";
 addons[]=
 {
 	"TBD_120MM_PM_43",
+	"tbd_mortars_2b14",
 	"A3_Characters_F_Tank",
 	"A3_Weapons_F_Rifles_Khaybar",
 	"A3_Weapons_F_Acc",
@@ -205,7 +206,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1795.0442,6.4815149,5988.1323};
-				angles[]={0,1.6812321,0};
+				angles[]={0,1.7135192,-0};
 			};
 			side="East";
 			flags=6;
@@ -229,6 +230,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1795.0442,5.5025558,5988.1821};
+						angles[]={0,1.7135192,-0};
 					};
 					side="East";
 					flags=7;
