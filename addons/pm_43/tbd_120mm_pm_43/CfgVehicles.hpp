@@ -14,7 +14,6 @@ class CfgVehicles {
                 class ViewOptics;
             };
         };
-        class ACE_Actions;
     };
 
     class TBD_120mm_PM_43 : StaticMortar {
