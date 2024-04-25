@@ -16,6 +16,7 @@ class CfgWeapons {
 		reloadSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Mortar\reload_mortar",1,1,20};
 		magazineReloadTime = 0.5;
+		
 		class Single1: Mode_SemiAuto {
 			displayName="120-PM-43 mortar ch. 0";
 			sounds[]=

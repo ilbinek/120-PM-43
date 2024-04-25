@@ -4,42 +4,52 @@
         <Key ID="STR_TBD_120mm_PM_43_NAME">
             <English>120-PM-43</English>
             <Czech>120-PM-43</Czech>
+            <Russian>120-ПМ-43</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_LOAD">
             <English>Load</English>
             <Czech>Nabít</Czech>
+            <Russian>Зарядить</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_UNLOAD">
             <English>Unload</English>
             <Czech>Vybít</Czech>
+            <Russian>Разрядить</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_1">
             <English>HE Charge 1</English>
             <Czech>Tříštivá nálož 1</Czech>
+            <Russian>ОФ заряд 1</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_2">
             <English>HE Charge 2</English>
             <Czech>Tříštivá nálož 2</Czech>
+            <Russian>ОФ заряд 2</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_3">
             <English>HE Charge 3</English>
             <Czech>Tříštivá nálož 3</Czech>
+            <Russian>ОФ заряд 3</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_4">
             <English>HE Charge 4</English>
             <Czech>Tříštivá nálož 4</Czech>
+            <Russian>ОФ заряд 4</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_5">
             <English>HE Charge 5</English>
             <Czech>Tříštivá nálož 5</Czech>
+            <Russian>ОФ заряд 5</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_6">
             <English>HE Charge 6</English>
             <Czech>Tříštivá nálož 6</Czech>
+            <Russian>ОФ заряд 6</Russian>
         </Key>
         <Key ID="STR_TBD_120mm_PM_43_HE_CHARGE_7">
             <English>HE Charge 7</English>
             <Czech>Tříštivá nálož 7</Czech>
+            <Russian>ОФ заряд 7</Russian>
         </Key>
     </Package>
 </Project>
