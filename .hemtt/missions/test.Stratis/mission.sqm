@@ -27,7 +27,7 @@ sourceName="test";
 addons[]=
 {
 	"TBD_120MM_PM_43",
-	"tbd_mortars_2b14",
+	"tbd_mortars_120_pm_43",
 	"A3_Characters_F_Tank",
 	"A3_Weapons_F_Rifles_Khaybar",
 	"A3_Weapons_F_Acc",

@@ -91,6 +91,48 @@ class CfgVehicles {
                 proxyIndex = 1;
             };
         };
+        selectionDamage = "zbytek";
+
+        class Damage {
+            mat[] = {"x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\ONE.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\ONE_damage.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\ONE_destroy.rvmat",
+                     
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\two.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\two_damage.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\two_destroy.rvmat",
+                     
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\scope.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\scope_damage.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\scope_destroy.rvmat",
+                     
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\number.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\number_damage.rvmat",
+                     "x\tbd_120mm\addons\pm_43\tbd_120mm_pm_43\data\number_destroy.rvmat"};
+            tex[] = {};
+        };
+
+        class DestructionEffects {
+
+                class Smoke2 {
+                intensity = 1;
+                interval = 1;
+                lifetime = 5;
+                position = "konec hlavne";
+                simulation = "particles" ;
+                type = "WeaponWreckSmoke";};
+
+                class Smoke {
+                intensity = 1;
+                interval = 1;
+                lifetime = 5;
+                position = "usti hlavne";
+                simulation = "particles" ;
+                type = "WeaponWreckSmoke";};
+
+
+
+                };
         htMin = 1;
         htMax = 480;
         afMax = 0;
