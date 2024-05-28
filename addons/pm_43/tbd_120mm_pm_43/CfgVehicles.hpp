@@ -11,7 +11,7 @@ class CfgVehicles {
     class StaticMortar : StaticWeapon {
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                class ViewOptics;
+                //class ViewOptics;
             };
         };
     };
@@ -63,7 +63,7 @@ class CfgVehicles {
                 gunnerOpticsModel = QPATHTOF(TBD_120mm_PM_43\scope.p3d);
                 gunnerUsesPilotView = 1;
                 disableSoundAttenuation = 1;
-                class ViewOptics : ViewOptics {
+                class ViewOptics {
                     camPos = "gunnerview";
                     camDir = "look";
                     initAngleX = 0;
