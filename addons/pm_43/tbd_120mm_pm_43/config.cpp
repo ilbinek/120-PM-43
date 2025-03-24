@@ -17,3 +17,4 @@ class Mode_SemiAuto;
 #include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgMoves.hpp"
+#include "cfgSound3DProcessors.hpp"
