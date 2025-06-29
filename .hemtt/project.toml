@@ -22,7 +22,6 @@ archive=false
 workshop = [
     "450814997", # CBA_A3
     "463939057", # ACE
-    "2369477168", # Advanced Developer Tools
     "3058335345", # TBD Mortars
 ]
 
@@ -39,7 +38,6 @@ parameters = [
 workshop = [
     "450814997", # CBA_A3
     "463939057", # ACE
-    "2369477168", # Advanced Developer Tools
 ]
 
 mission = "test.Stratis"
